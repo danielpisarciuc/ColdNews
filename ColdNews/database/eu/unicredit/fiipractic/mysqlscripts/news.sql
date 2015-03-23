@@ -9,12 +9,10 @@ CREATE TABLE IF NOT EXISTS `news` (
   `date` date NOT NULL,
   `author` varchar(30) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
-
 --
 -- Indexes for table `news`
 --
 ALTER TABLE `news` ADD PRIMARY KEY (`id`);
-
 --
 -- AUTO_INCREMENT for table `news` 
 --
