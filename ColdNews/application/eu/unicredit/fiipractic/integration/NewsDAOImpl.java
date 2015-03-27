@@ -64,7 +64,7 @@ public class NewsDAOImpl implements NewsDAO {
 		try {
 			createStatement = connection.createStatement();
 			result = createStatement
-					.executeQuery("SELECT * FROM `fii_practic`.`news` order by date asc");
+					.executeQuery("SELECT * FROM `fii_practic`.`news` order by date desc");
 
 			mapNews(newsResult, result);
 		} catch (SQLException e) {
