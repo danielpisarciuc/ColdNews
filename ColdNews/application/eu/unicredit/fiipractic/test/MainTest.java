@@ -70,7 +70,9 @@ public class MainTest {
 	public static void deleteStatementTest() {
 		try {
 			List<News> result = news.loadAll();
+			if(!result.isEmpty()){
 			news.delete(result.get(0).getId());
+			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
